@@ -1,0 +1,19 @@
+nav {
+    background-color: #2b2858;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
