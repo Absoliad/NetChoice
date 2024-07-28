@@ -4,7 +4,8 @@ import { JWT_SECRET } from '$env/static/private';
 import jwt from 'jsonwebtoken';
 import login  from '$lib/data/user.json';
 
-export async function load() {
+export async function load({cookies}) {
+    if (cookies.get('connected')) throw redirect(303, '/main');
 
     return {
         title : 'Page de connexion',
